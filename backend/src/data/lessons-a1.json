@@ -1,0 +1,156 @@
+[
+  {
+    "lesson_code": "A1-01",
+    "level": "A1",
+    "order_num": 1,
+    "title": "Greetings and Introductions",
+    "description": "Learn basic greetings and how to introduce yourself in German",
+    "content": {
+      "generalVocab": [
+        { "german": "Hallo", "english": "Hello" },
+        { "german": "Guten Morgen", "english": "Good morning" },
+        { "german": "Guten Tag", "english": "Good day/afternoon" },
+        { "german": "Guten Abend", "english": "Good evening" },
+        { "german": "Auf Wiedersehen", "english": "Goodbye" },
+        { "german": "Tschüss", "english": "Bye" },
+        { "german": "Bitte", "english": "Please/You're welcome" },
+        { "german": "Danke", "english": "Thank you" },
+        { "german": "Entschuldigung", "english": "Excuse me/Sorry" },
+        { "german": "Ja", "english": "Yes" },
+        { "german": "Nein", "english": "No" },
+        { "german": "Wie heißen Sie?", "english": "What is your name? (formal)" },
+        { "german": "Ich heiße...", "english": "My name is..." }
+      ],
+      "nursingVocab": [
+        { "german": "der Patient / die Patientin", "english": "the patient (m/f)" },
+        { "german": "die Krankenschwester", "english": "the nurse (f)" },
+        { "german": "der Pfleger", "english": "the nurse (m)" },
+        { "german": "der Arzt / die Ärztin", "english": "the doctor (m/f)" },
+        { "german": "das Krankenhaus", "english": "the hospital" },
+        { "german": "die Klinik", "english": "the clinic" },
+        { "german": "Wie geht es Ihnen?", "english": "How are you feeling?" },
+        { "german": "Gute Besserung", "english": "Get well soon" }
+      ],
+      "phrases": [
+        { "german": "Guten Morgen, ich bin Krankenschwester Anna.", "english": "Good morning, I am Nurse Anna." },
+        { "german": "Wie heißen Sie, bitte?", "english": "What is your name, please?" },
+        { "german": "Wie geht es Ihnen heute?", "english": "How are you feeling today?" },
+        { "german": "Ich heiße Schmidt. Sehr erfreut.", "english": "My name is Schmidt. Very pleased to meet you." }
+      ],
+      "grammar": [
+        {
+          "title": "Formal vs Informal Address",
+          "explanation": "In German, use 'Sie' (formal) for patients and colleagues you don't know well, and 'du' (informal) for friends.",
+          "examples": [
+            "Wie heißen Sie? (formal)",
+            "Wie heißt du? (informal)"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "type": "flashcard",
+          "cards": [
+            { "front": "Hallo", "back": "Hello" },
+            { "front": "Danke", "back": "Thank you" },
+            { "front": "Bitte", "back": "Please/You're welcome" },
+            { "front": "Entschuldigung", "back": "Excuse me/Sorry" },
+            { "front": "Guten Morgen", "back": "Good morning" }
+          ]
+        },
+        {
+          "type": "fill-in-blank",
+          "questions": [
+            { "question": "_____ heißen Sie? (What is your name?)", "answer": "Wie" },
+            { "question": "Ich _____ Anna. (My name is Anna)", "answer": "heiße" },
+            { "question": "_____ Morgen! (Good morning!)", "answer": "Guten" },
+            { "question": "_____ schön! (Thank you!)", "answer": "Danke" }
+          ]
+        },
+        {
+          "type": "matching",
+          "pairs": [
+            { "id": 1, "left": "Guten Tag", "right": "Good day" },
+            { "id": 2, "left": "Auf Wiedersehen", "right": "Goodbye" },
+            { "id": 3, "left": "der Patient", "right": "the patient" },
+            { "id": 4, "left": "die Krankenschwester", "right": "the nurse (f)" },
+            { "id": 5, "left": "das Krankenhaus", "right": "the hospital" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "lesson_code": "A1-02",
+    "level": "A1",
+    "order_num": 2,
+    "title": "Numbers and Personal Information",
+    "description": "Learn numbers, dates, and how to share personal information",
+    "content": {
+      "generalVocab": [
+        { "german": "eins", "english": "one" },
+        { "german": "zwei", "english": "two" },
+        { "german": "drei", "english": "three" },
+        { "german": "vier", "english": "four" },
+        { "german": "fünf", "english": "five" },
+        { "german": "zehn", "english": "ten" },
+        { "german": "zwanzig", "english": "twenty" },
+        { "german": "das Alter", "english": "the age" },
+        { "german": "die Adresse", "english": "the address" },
+        { "german": "die Telefonnummer", "english": "the phone number" }
+      ],
+      "nursingVocab": [
+        { "german": "das Geburtsdatum", "english": "the date of birth" },
+        { "german": "die Patientendaten", "english": "the patient data" },
+        { "german": "die Aufnahme", "english": "the admission" },
+        { "german": "das Zimmer", "english": "the room" },
+        { "german": "das Bett", "english": "the bed" },
+        { "german": "Zimmer Nummer", "english": "room number" },
+        { "german": "Wie alt sind Sie?", "english": "How old are you?" },
+        { "german": "Wann sind Sie geboren?", "english": "When were you born?" }
+      ],
+      "phrases": [
+        { "german": "Ich bin 45 Jahre alt.", "english": "I am 45 years old." },
+        { "german": "Meine Telefonnummer ist...", "english": "My phone number is..." },
+        { "german": "Sie sind in Zimmer 204.", "english": "You are in room 204." },
+        { "german": "Ihr Bett ist Nummer 2.", "english": "Your bed is number 2." }
+      ],
+      "grammar": [
+        {
+          "title": "Numbers 1-100",
+          "explanation": "German numbers are straightforward from 1-20, then combine tens and ones: 21 is 'einundzwanzig' (one-and-twenty).",
+          "examples": [
+            "21 = einundzwanzig",
+            "35 = fünfunddreißig",
+            "67 = siebenundsechzig"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "type": "quiz",
+          "questions": [
+            {
+              "question": "How do you say '3' in German?",
+              "options": ["zwei", "drei", "vier", "fünf"],
+              "correctAnswer": 1,
+              "explanation": "'Drei' is the German word for three."
+            },
+            {
+              "question": "What is 'Geburtsdatum' in English?",
+              "options": ["birthday", "date of birth", "age", "year"],
+              "correctAnswer": 1,
+              "explanation": "'Geburtsdatum' means 'date of birth' in German."
+            },
+            {
+              "question": "How do you ask 'How old are you?' formally in German?",
+              "options": ["Wie alt bist du?", "Wie alt sind Sie?", "Wann sind Sie geboren?", "Was ist dein Alter?"],
+              "correctAnswer": 1,
+              "explanation": "'Wie alt sind Sie?' is the formal way to ask about age."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
