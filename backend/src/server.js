@@ -18,14 +18,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'KlinikLingo API is running' });
 });
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/lessons', lessonRoutes);
-app.use('/api/progress', progressRoutes);
+app.use('/auth', authRoutes);
+app.use('/lessons', lessonRoutes);
+app.use('/progress', progressRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
