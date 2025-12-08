@@ -22,10 +22,18 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401 || error.response?.status === 403) {
+    // Only clear auth and redirect if this is an authenticated request that failed
+    // Don't redirect for guest users accessing public content
+    if (error.response?.status === 401 && localStorage.getItem('token')) {
+      // User had a token but it's invalid/expired
       localStorage.removeItem('token');
       localStorage.removeItem('user');
-      window.location.href = '/login';
+      // Only redirect if we're on a protected page
+      const protectedRoutes = ['/dashboard', '/profile'];
+      const currentPath = window.location.pathname;
+      if (protectedRoutes.some(route => currentPath.startsWith(route))) {
+        window.location.href = '/login';
+      }
     }
     return Promise.reject(error);
   }
