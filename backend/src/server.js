@@ -11,7 +11,30 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: function(origin, callback) {
+    // Allow requests with no origin (mobile apps, Postman, etc.)
+    if (!origin) return callback(null, true);
+
+    // Allow all Vercel preview URLs and production URL
+    const allowedOrigins = [
+      process.env.FRONTEND_URL,
+      /https:\/\/kliniklingo.*\.vercel\.app$/,
+      'http://localhost:5173',
+      'http://localhost:3000'
+    ];
+
+    const isAllowed = allowedOrigins.some(pattern => {
+      if (typeof pattern === 'string') return pattern === origin || pattern === '*';
+      if (pattern instanceof RegExp) return pattern.test(origin);
+      return false;
+    });
+
+    if (isAllowed) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 app.use(express.json());
