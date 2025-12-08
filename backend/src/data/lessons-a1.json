@@ -3,81 +3,862 @@
     "lesson_code": "A1-01",
     "level": "A1",
     "order_num": 1,
-    "title": "Greetings and Introductions",
-    "description": "Learn basic greetings and how to introduce yourself in German",
+    "title": "Greetings and Introductions in Healthcare Settings",
+    "description": "Master essential greetings and self-introductions for professional healthcare environments",
     "content": {
-      "generalVocab": [
-        { "german": "Hallo", "english": "Hello" },
-        { "german": "Guten Morgen", "english": "Good morning" },
-        { "german": "Guten Tag", "english": "Good day/afternoon" },
-        { "german": "Guten Abend", "english": "Good evening" },
-        { "german": "Auf Wiedersehen", "english": "Goodbye" },
-        { "german": "Tschüss", "english": "Bye" },
-        { "german": "Bitte", "english": "Please/You're welcome" },
-        { "german": "Danke", "english": "Thank you" },
-        { "german": "Entschuldigung", "english": "Excuse me/Sorry" },
-        { "german": "Ja", "english": "Yes" },
-        { "german": "Nein", "english": "No" },
-        { "german": "Wie heißen Sie?", "english": "What is your name? (formal)" },
-        { "german": "Ich heiße...", "english": "My name is..." }
-      ],
-      "nursingVocab": [
-        { "german": "der Patient / die Patientin", "english": "the patient (m/f)" },
-        { "german": "die Krankenschwester", "english": "the nurse (f)" },
-        { "german": "der Pfleger", "english": "the nurse (m)" },
-        { "german": "der Arzt / die Ärztin", "english": "the doctor (m/f)" },
-        { "german": "das Krankenhaus", "english": "the hospital" },
-        { "german": "die Klinik", "english": "the clinic" },
-        { "german": "Wie geht es Ihnen?", "english": "How are you feeling?" },
-        { "german": "Gute Besserung", "english": "Get well soon" }
-      ],
-      "phrases": [
-        { "german": "Guten Morgen, ich bin Krankenschwester Anna.", "english": "Good morning, I am Nurse Anna." },
-        { "german": "Wie heißen Sie, bitte?", "english": "What is your name, please?" },
-        { "german": "Wie geht es Ihnen heute?", "english": "How are you feeling today?" },
-        { "german": "Ich heiße Schmidt. Sehr erfreut.", "english": "My name is Schmidt. Very pleased to meet you." }
-      ],
+      "metadata": {
+        "estimatedTime": "45-60 minutes",
+        "difficulty": "beginner",
+        "cefrLevel": "A1",
+        "topics": [
+          "greetings",
+          "introductions",
+          "professional communication"
+        ],
+        "skills": [
+          "speaking",
+          "listening",
+          "reading",
+          "writing"
+        ]
+      },
+      "learningObjectives": {
+        "canDoStatements": [
+          "I can greet patients and colleagues appropriately in formal and informal situations",
+          "I can introduce myself and state my role in a healthcare setting",
+          "I can ask someone's name and understand their response",
+          "I can use polite expressions like 'please', 'thank you', and 'excuse me'",
+          "I can distinguish between formal (Sie) and informal (du) address"
+        ],
+        "focusAreas": [
+          "Basic greeting vocabulary (Guten Morgen, Guten Tag, Guten Abend)",
+          "Self-introduction phrases (Ich heiße..., Ich bin...)",
+          "Formal vs. informal address (Sie vs. du)",
+          "Professional healthcare titles and roles",
+          "Polite expressions in patient interactions"
+        ]
+      },
+      "scenario": {
+        "title": "First Day at the Hospital",
+        "context": "You are a newly hired nurse at a German hospital. Today is your first day, and you need to introduce yourself to colleagues and patients. You'll meet the head nurse, greet patients during morning rounds, and interact with doctors and other staff.",
+        "realWorldApplication": "These phrases are essential for daily interactions in any German healthcare facility. Proper greetings set a professional tone and help build trust with patients.",
+        "culturalNotes": [
+          "Germans value formality in professional settings - always use 'Sie' with patients and new colleagues",
+          "A firm handshake and direct eye contact are expected when introducing yourself",
+          "Use academic titles (Dr., Professor) when addressing doctors",
+          "Morning greetings are important - always greet colleagues when arriving at work"
+        ]
+      },
+      "keyPhrases": {
+        "survivalPhrases": [
+          {
+            "german": "Guten Morgen! Ich bin die neue Krankenschwester.",
+            "english": "Good morning! I am the new nurse.",
+            "pronunciation": "GOO-ten MOR-gen! Ikh bin dee NOY-eh KRAN-ken-shves-ter.",
+            "audioUrl": "/audio/a1-01-phrase-01.mp3",
+            "usage": "Use when introducing yourself to colleagues on your first day"
+          },
+          {
+            "german": "Wie geht es Ihnen heute?",
+            "english": "How are you (feeling) today?",
+            "pronunciation": "Vee gayt es EE-nen HOY-teh?",
+            "audioUrl": "/audio/a1-01-phrase-02.mp3",
+            "usage": "Essential phrase for checking on patients during rounds"
+          },
+          {
+            "german": "Kann ich Ihnen helfen?",
+            "english": "Can I help you?",
+            "pronunciation": "Kan ikh EE-nen HEL-fen?",
+            "audioUrl": "/audio/a1-01-phrase-03.mp3",
+            "usage": "Offer assistance to patients or visitors"
+          },
+          {
+            "german": "Einen Moment, bitte.",
+            "english": "One moment, please.",
+            "pronunciation": "I-nen mo-MENT, BIT-teh.",
+            "audioUrl": "/audio/a1-01-phrase-04.mp3",
+            "usage": "When you need a moment to attend to something"
+          },
+          {
+            "german": "Entschuldigung, wie ist Ihr Name?",
+            "english": "Excuse me, what is your name?",
+            "pronunciation": "Ent-SHUL-di-gung, vee ist eer NAH-meh?",
+            "audioUrl": "/audio/a1-01-phrase-05.mp3",
+            "usage": "Politely asking a patient's name"
+          }
+        ],
+        "essentialExpressions": [
+          {
+            "category": "Greetings by Time of Day",
+            "items": [
+              {
+                "german": "Guten Morgen",
+                "english": "Good morning (until ~11am)",
+                "audioUrl": "/audio/a1-01-greeting-01.mp3"
+              },
+              {
+                "german": "Guten Tag",
+                "english": "Good day/afternoon (11am-6pm)",
+                "audioUrl": "/audio/a1-01-greeting-02.mp3"
+              },
+              {
+                "german": "Guten Abend",
+                "english": "Good evening (after 6pm)",
+                "audioUrl": "/audio/a1-01-greeting-03.mp3"
+              },
+              {
+                "german": "Gute Nacht",
+                "english": "Good night (when going to sleep)",
+                "audioUrl": "/audio/a1-01-greeting-04.mp3"
+              }
+            ]
+          },
+          {
+            "category": "Farewells",
+            "items": [
+              {
+                "german": "Auf Wiedersehen",
+                "english": "Goodbye (formal)",
+                "audioUrl": "/audio/a1-01-farewell-01.mp3"
+              },
+              {
+                "german": "Tschüss",
+                "english": "Bye (informal)",
+                "audioUrl": "/audio/a1-01-farewell-02.mp3"
+              },
+              {
+                "german": "Bis bald",
+                "english": "See you soon",
+                "audioUrl": "/audio/a1-01-farewell-03.mp3"
+              },
+              {
+                "german": "Bis morgen",
+                "english": "See you tomorrow",
+                "audioUrl": "/audio/a1-01-farewell-04.mp3"
+              }
+            ]
+          },
+          {
+            "category": "Polite Expressions",
+            "items": [
+              {
+                "german": "Bitte",
+                "english": "Please / You're welcome",
+                "audioUrl": "/audio/a1-01-polite-01.mp3"
+              },
+              {
+                "german": "Danke / Danke schön",
+                "english": "Thank you / Thank you very much",
+                "audioUrl": "/audio/a1-01-polite-02.mp3"
+              },
+              {
+                "german": "Entschuldigung",
+                "english": "Excuse me / Sorry",
+                "audioUrl": "/audio/a1-01-polite-03.mp3"
+              },
+              {
+                "german": "Es tut mir leid",
+                "english": "I'm sorry",
+                "audioUrl": "/audio/a1-01-polite-04.mp3"
+              }
+            ]
+          }
+        ]
+      },
+      "vocabulary": {
+        "generalVocab": [
+          {
+            "german": "Hallo",
+            "english": "Hello",
+            "article": null,
+            "plural": null,
+            "pronunciation": "HA-lo",
+            "audioUrl": "/audio/vocab/hallo.mp3",
+            "imageUrl": "/images/vocab/greeting.jpg",
+            "exampleSentence": "Hallo, wie geht es dir?",
+            "exampleTranslation": "Hello, how are you?"
+          },
+          {
+            "german": "Name",
+            "english": "name",
+            "article": "der",
+            "plural": "die Namen",
+            "pronunciation": "NAH-meh",
+            "audioUrl": "/audio/vocab/name.mp3",
+            "gender": "masculine",
+            "exampleSentence": "Mein Name ist Anna.",
+            "exampleTranslation": "My name is Anna."
+          },
+          {
+            "german": "heißen",
+            "english": "to be called",
+            "type": "verb",
+            "conjugation": {
+              "ich": "heiße",
+              "du": "heißt",
+              "er/sie/es": "heißt",
+              "wir": "heißen",
+              "ihr": "heißt",
+              "sie/Sie": "heißen"
+            },
+            "pronunciation": "HI-sen",
+            "audioUrl": "/audio/vocab/heissen.mp3",
+            "exampleSentence": "Ich heiße Maria.",
+            "exampleTranslation": "I am called Maria. / My name is Maria."
+          }
+        ],
+        "healthcareVocab": [
+          {
+            "german": "Krankenschwester",
+            "english": "nurse (female)",
+            "article": "die",
+            "plural": "die Krankenschwestern",
+            "pronunciation": "KRAN-ken-shves-ter",
+            "audioUrl": "/audio/vocab/krankenschwester.mp3",
+            "imageUrl": "/images/vocab/nurse-female.jpg",
+            "gender": "feminine",
+            "exampleSentence": "Die Krankenschwester hilft dem Patienten.",
+            "exampleTranslation": "The nurse helps the patient."
+          },
+          {
+            "german": "Pfleger",
+            "english": "nurse (male)",
+            "article": "der",
+            "plural": "die Pfleger",
+            "pronunciation": "PFLAY-ger",
+            "audioUrl": "/audio/vocab/pfleger.mp3",
+            "imageUrl": "/images/vocab/nurse-male.jpg",
+            "gender": "masculine",
+            "exampleSentence": "Der Pfleger arbeitet im Krankenhaus.",
+            "exampleTranslation": "The male nurse works in the hospital."
+          },
+          {
+            "german": "Patient",
+            "english": "patient (male)",
+            "article": "der",
+            "plural": "die Patienten",
+            "pronunciation": "pa-tsi-ENT",
+            "audioUrl": "/audio/vocab/patient.mp3",
+            "imageUrl": "/images/vocab/patient.jpg",
+            "gender": "masculine"
+          },
+          {
+            "german": "Patientin",
+            "english": "patient (female)",
+            "article": "die",
+            "plural": "die Patientinnen",
+            "pronunciation": "pa-tsi-EN-tin",
+            "audioUrl": "/audio/vocab/patientin.mp3",
+            "gender": "feminine"
+          },
+          {
+            "german": "Arzt",
+            "english": "doctor (male)",
+            "article": "der",
+            "plural": "die Ärzte",
+            "pronunciation": "ARTST",
+            "audioUrl": "/audio/vocab/arzt.mp3",
+            "imageUrl": "/images/vocab/doctor-male.jpg",
+            "gender": "masculine",
+            "note": "Note the umlaut in plural: Ärzte"
+          },
+          {
+            "german": "Ärztin",
+            "english": "doctor (female)",
+            "article": "die",
+            "plural": "die Ärztinnen",
+            "pronunciation": "ERTS-tin",
+            "audioUrl": "/audio/vocab/aerztin.mp3",
+            "imageUrl": "/images/vocab/doctor-female.jpg",
+            "gender": "feminine"
+          },
+          {
+            "german": "Krankenhaus",
+            "english": "hospital",
+            "article": "das",
+            "plural": "die Krankenhäuser",
+            "pronunciation": "KRAN-ken-house",
+            "audioUrl": "/audio/vocab/krankenhaus.mp3",
+            "imageUrl": "/images/vocab/hospital.jpg",
+            "gender": "neuter",
+            "exampleSentence": "Das Krankenhaus ist groß.",
+            "exampleTranslation": "The hospital is large."
+          },
+          {
+            "german": "Klinik",
+            "english": "clinic",
+            "article": "die",
+            "plural": "die Kliniken",
+            "pronunciation": "kli-NEEK",
+            "audioUrl": "/audio/vocab/klinik.mp3",
+            "gender": "feminine"
+          }
+        ]
+      },
       "grammar": [
         {
-          "title": "Formal vs Informal Address",
-          "explanation": "In German, use 'Sie' (formal) for patients and colleagues you don't know well, and 'du' (informal) for friends.",
+          "title": "Formal vs. Informal Address (Sie vs. du)",
+          "cefrAlignment": "A1 - Basic personal communication",
+          "explanation": "German has two ways to say 'you': formal (Sie) and informal (du). In healthcare, ALWAYS use 'Sie' with patients and colleagues you don't know well.",
+          "rules": [
+            "Use 'Sie' (formal) with: patients, supervisors, doctors, new colleagues, anyone in professional settings",
+            "Use 'du' (informal) with: close friends, family, children under 16, colleagues who have agreed to use 'du'",
+            "'Sie' is always capitalized, even in the middle of a sentence",
+            "The verb form for 'Sie' is the same as the plural 'sie' (they) and 'wir' (we) forms"
+          ],
           "examples": [
-            "Wie heißen Sie? (formal)",
-            "Wie heißt du? (informal)"
+            {
+              "german": "Wie heißen Sie?",
+              "english": "What is your name? (formal)",
+              "usage": "Use with patients and professional contacts",
+              "audioUrl": "/audio/grammar/formal-01.mp3"
+            },
+            {
+              "german": "Wie heißt du?",
+              "english": "What is your name? (informal)",
+              "usage": "Use only with close friends or children",
+              "audioUrl": "/audio/grammar/informal-01.mp3"
+            },
+            {
+              "german": "Wie geht es Ihnen?",
+              "english": "How are you? (formal)",
+              "usage": "Checking on a patient",
+              "audioUrl": "/audio/grammar/formal-02.mp3"
+            },
+            {
+              "german": "Wie geht es dir?",
+              "english": "How are you? (informal)",
+              "usage": "Asking a friend",
+              "audioUrl": "/audio/grammar/informal-02.mp3"
+            }
+          ],
+          "practiceExercises": [
+            "Decide: Use 'Sie' or 'du' when speaking to a patient?",
+            "Decide: Use 'Sie' or 'du' when speaking to the hospital director?"
+          ]
+        },
+        {
+          "title": "The Verb 'heißen' (to be called)",
+          "cefrAlignment": "A1 - Personal identification",
+          "explanation": "'heißen' is used to state names. It literally means 'to be called' and is essential for introductions.",
+          "conjugation": {
+            "ich": "heiße (I am called)",
+            "du": "heißt (you are called - informal)",
+            "er/sie/es": "heißt (he/she/it is called)",
+            "wir": "heißen (we are called)",
+            "ihr": "heißt (you all are called)",
+            "sie": "heißen (they are called)",
+            "Sie": "heißen (you are called - formal)"
+          },
+          "examples": [
+            {
+              "german": "Ich heiße Anna Müller.",
+              "english": "My name is Anna Müller.",
+              "audioUrl": "/audio/grammar/heissen-01.mp3"
+            },
+            {
+              "german": "Wie heißen Sie?",
+              "english": "What is your name?",
+              "audioUrl": "/audio/grammar/heissen-02.mp3"
+            },
+            {
+              "german": "Er heißt Thomas.",
+              "english": "His name is Thomas. / He is called Thomas.",
+              "audioUrl": "/audio/grammar/heissen-03.mp3"
+            }
+          ],
+          "commonMistakes": [
+            {
+              "wrong": "Ich bin Anna. (literal: I am Anna)",
+              "right": "Ich heiße Anna.",
+              "note": "While 'Ich bin Anna' is understood, 'Ich heiße Anna' is more natural for stating your name"
+            }
+          ]
+        },
+        {
+          "title": "German Articles and Gender",
+          "cefrAlignment": "A1 - Basic noun recognition",
+          "explanation": "All German nouns have a gender (masculine, feminine, or neuter) and require an article. Learning the article with each noun is essential.",
+          "articles": {
+            "definite": {
+              "masculine": "der (the)",
+              "feminine": "die (the)",
+              "neuter": "das (the)",
+              "plural": "die (the)"
+            },
+            "indefinite": {
+              "masculine": "ein (a/an)",
+              "feminine": "eine (a/an)",
+              "neuter": "ein (a/an)",
+              "plural": "keine (no - negative indefinite)"
+            }
+          },
+          "examples": [
+            {
+              "german": "der Patient (masculine)",
+              "english": "the patient (male)",
+              "tip": "Most male occupations and male people are masculine"
+            },
+            {
+              "german": "die Krankenschwester (feminine)",
+              "english": "the nurse (female)",
+              "tip": "Most female occupations and female people are feminine"
+            },
+            {
+              "german": "das Krankenhaus (neuter)",
+              "english": "the hospital",
+              "tip": "Many buildings and facilities are neuter"
+            }
+          ],
+          "learningStrategies": [
+            "Always learn the article WITH the noun - never learn a noun alone",
+            "Use color-coding: blue for der (masculine), red for die (feminine), green for das (neuter)",
+            "Look for patterns: -ung, -heit, -keit endings are usually feminine",
+            "Compound nouns take the gender of the last word: Kranken+haus → das Haus → das Krankenhaus"
+          ]
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Meeting a Patient for the First Time",
+          "scenario": "You enter a patient's room during morning rounds",
+          "difficulty": "A1",
+          "lines": [
+            {
+              "speaker": "Nurse (You)",
+              "german": "Guten Morgen! Ich bin Krankenschwester Anna.",
+              "english": "Good morning! I am Nurse Anna.",
+              "audioUrl": "/audio/dialogue-01-line-01.mp3"
+            },
+            {
+              "speaker": "Patient",
+              "german": "Guten Morgen.",
+              "english": "Good morning.",
+              "audioUrl": "/audio/dialogue-01-line-02.mp3"
+            },
+            {
+              "speaker": "Nurse (You)",
+              "german": "Wie heißen Sie, bitte?",
+              "english": "What is your name, please?",
+              "audioUrl": "/audio/dialogue-01-line-03.mp3"
+            },
+            {
+              "speaker": "Patient",
+              "german": "Ich heiße Schmidt. Peter Schmidt.",
+              "english": "My name is Schmidt. Peter Schmidt.",
+              "audioUrl": "/audio/dialogue-01-line-04.mp3"
+            },
+            {
+              "speaker": "Nurse (You)",
+              "german": "Sehr erfreut, Herr Schmidt. Wie geht es Ihnen heute?",
+              "english": "Very pleased to meet you, Mr. Schmidt. How are you feeling today?",
+              "audioUrl": "/audio/dialogue-01-line-05.mp3"
+            },
+            {
+              "speaker": "Patient",
+              "german": "Danke, es geht.",
+              "english": "Thank you, I'm okay.",
+              "audioUrl": "/audio/dialogue-01-line-06.mp3"
+            }
+          ],
+          "vocabulary": [
+            "Guten Morgen - Good morning",
+            "Wie heißen Sie? - What is your name?",
+            "Sehr erfreut - Very pleased to meet you",
+            "Herr - Mr.",
+            "Wie geht es Ihnen? - How are you?"
+          ],
+          "culturalNotes": [
+            "Always use titles (Herr/Frau) with last names in professional settings",
+            "Wait for the patient to respond before asking about their condition",
+            "A polite greeting sets a positive tone for care"
+          ]
+        },
+        {
+          "title": "Introducing Yourself to a Colleague",
+          "scenario": "First day at work, meeting the head nurse",
+          "difficulty": "A1",
+          "lines": [
+            {
+              "speaker": "You",
+              "german": "Guten Tag! Ich bin neu hier. Ich heiße Anna Müller.",
+              "english": "Good day! I am new here. My name is Anna Müller.",
+              "audioUrl": "/audio/dialogue-02-line-01.mp3"
+            },
+            {
+              "speaker": "Head Nurse",
+              "german": "Guten Tag, Frau Müller. Willkommen! Ich bin die Stationsleiterin, Frau Weber.",
+              "english": "Good day, Ms. Müller. Welcome! I am the head nurse, Ms. Weber.",
+              "audioUrl": "/audio/dialogue-02-line-02.mp3"
+            },
+            {
+              "speaker": "You",
+              "german": "Sehr erfreut, Frau Weber.",
+              "english": "Very pleased to meet you, Ms. Weber.",
+              "audioUrl": "/audio/dialogue-02-line-03.mp3"
+            },
+            {
+              "speaker": "Head Nurse",
+              "german": "Haben Sie Fragen?",
+              "english": "Do you have questions?",
+              "audioUrl": "/audio/dialogue-02-line-04.mp3"
+            }
           ]
         }
       ],
       "exercises": [
         {
+          "type": "listening",
+          "title": "Listen and Identify",
+          "instructions": "Listen to each greeting and identify the time of day",
+          "questions": [
+            {
+              "audioUrl": "/audio/exercise-listening-01.mp3",
+              "transcript": "Guten Morgen!",
+              "question": "What time of day is this greeting used?",
+              "options": [
+                "Morning",
+                "Afternoon",
+                "Evening",
+                "Night"
+              ],
+              "correctAnswer": 0,
+              "explanation": "'Guten Morgen' is used in the morning, typically until around 11 AM."
+            },
+            {
+              "audioUrl": "/audio/exercise-listening-02.mp3",
+              "transcript": "Guten Abend!",
+              "question": "What time of day is this greeting used?",
+              "options": [
+                "Morning",
+                "Afternoon",
+                "Evening",
+                "Night"
+              ],
+              "correctAnswer": 2,
+              "explanation": "'Guten Abend' is used in the evening, typically after 6 PM."
+            }
+          ]
+        },
+        {
           "type": "flashcard",
+          "title": "Essential Greetings Flashcards",
+          "instructions": "Study these essential greeting expressions. Click to flip the card.",
           "cards": [
-            { "front": "Hallo", "back": "Hello" },
-            { "front": "Danke", "back": "Thank you" },
-            { "front": "Bitte", "back": "Please/You're welcome" },
-            { "front": "Entschuldigung", "back": "Excuse me/Sorry" },
-            { "front": "Guten Morgen", "back": "Good morning" }
+            {
+              "front": "Guten Morgen",
+              "back": "Good morning",
+              "audioUrl": "/audio/flashcard-01.mp3",
+              "imageUrl": "/images/flashcard-morning.jpg"
+            },
+            {
+              "front": "Guten Tag",
+              "back": "Good day / Good afternoon",
+              "audioUrl": "/audio/flashcard-02.mp3",
+              "imageUrl": "/images/flashcard-afternoon.jpg"
+            },
+            {
+              "front": "Guten Abend",
+              "back": "Good evening",
+              "audioUrl": "/audio/flashcard-03.mp3",
+              "imageUrl": "/images/flashcard-evening.jpg"
+            },
+            {
+              "front": "Auf Wiedersehen",
+              "back": "Goodbye (formal)",
+              "audioUrl": "/audio/flashcard-04.mp3"
+            },
+            {
+              "front": "Wie heißen Sie?",
+              "back": "What is your name? (formal)",
+              "audioUrl": "/audio/flashcard-05.mp3"
+            },
+            {
+              "front": "Ich heiße...",
+              "back": "My name is...",
+              "audioUrl": "/audio/flashcard-06.mp3"
+            },
+            {
+              "front": "Wie geht es Ihnen?",
+              "back": "How are you? (formal)",
+              "audioUrl": "/audio/flashcard-07.mp3"
+            }
           ]
         },
         {
           "type": "fill-in-blank",
+          "title": "Complete the Conversation",
+          "instructions": "Fill in the blanks with the correct German words",
           "questions": [
-            { "question": "_____ heißen Sie? (What is your name?)", "answer": "Wie" },
-            { "question": "Ich _____ Anna. (My name is Anna)", "answer": "heiße" },
-            { "question": "_____ Morgen! (Good morning!)", "answer": "Guten" },
-            { "question": "_____ schön! (Thank you!)", "answer": "Danke" }
+            {
+              "question": "Guten Morgen! _____ heiße Anna. (My name is Anna)",
+              "answer": "Ich",
+              "options": [
+                "Ich",
+                "Du",
+                "Er",
+                "Sie"
+              ],
+              "explanation": "'Ich' means 'I' in German. 'Ich heiße Anna' = 'My name is Anna'",
+              "audioUrl": "/audio/fill-blank-01.mp3"
+            },
+            {
+              "question": "_____ heißen Sie? (What is your name?)",
+              "answer": "Wie",
+              "options": [
+                "Wie",
+                "Was",
+                "Wo",
+                "Wer"
+              ],
+              "explanation": "'Wie heißen Sie?' is how you ask someone's name formally. 'Wie' means 'how/what'",
+              "audioUrl": "/audio/fill-blank-02.mp3"
+            },
+            {
+              "question": "Ich bin die neue _____. (I am the new nurse)",
+              "answer": "Krankenschwester",
+              "options": [
+                "Krankenschwester",
+                "Ärztin",
+                "Patientin",
+                "Klinik"
+              ],
+              "explanation": "'Krankenschwester' means 'nurse (female)' in German",
+              "audioUrl": "/audio/fill-blank-03.mp3"
+            },
+            {
+              "question": "_____ Tag! (Good afternoon!)",
+              "answer": "Guten",
+              "options": [
+                "Guten",
+                "Gute",
+                "Gut",
+                "Guter"
+              ],
+              "explanation": "'Guten Tag' is the standard greeting for 'Good day/afternoon'",
+              "audioUrl": "/audio/fill-blank-04.mp3"
+            }
           ]
         },
         {
           "type": "matching",
+          "title": "Match German to English",
+          "instructions": "Match each German phrase with its English translation",
           "pairs": [
-            { "id": 1, "left": "Guten Tag", "right": "Good day" },
-            { "id": 2, "left": "Auf Wiedersehen", "right": "Goodbye" },
-            { "id": 3, "left": "der Patient", "right": "the patient" },
-            { "id": 4, "left": "die Krankenschwester", "right": "the nurse (f)" },
-            { "id": 5, "left": "das Krankenhaus", "right": "the hospital" }
+            {
+              "id": 1,
+              "left": "Guten Morgen",
+              "right": "Good morning"
+            },
+            {
+              "id": 2,
+              "left": "Danke schön",
+              "right": "Thank you very much"
+            },
+            {
+              "id": 3,
+              "left": "der Patient",
+              "right": "the patient"
+            },
+            {
+              "id": 4,
+              "left": "die Krankenschwester",
+              "right": "the nurse (f)"
+            },
+            {
+              "id": 5,
+              "left": "das Krankenhaus",
+              "right": "the hospital"
+            },
+            {
+              "id": 6,
+              "left": "Wie geht es Ihnen?",
+              "right": "How are you? (formal)"
+            },
+            {
+              "id": 7,
+              "left": "Entschuldigung",
+              "right": "Excuse me / Sorry"
+            },
+            {
+              "id": 8,
+              "left": "Auf Wiedersehen",
+              "right": "Goodbye"
+            }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "title": "Formal or Informal?",
+          "instructions": "Decide whether to use formal (Sie) or informal (du) in each situation",
+          "questions": [
+            {
+              "question": "You are speaking to a patient in the hospital. Which form should you use?",
+              "options": [
+                "Sie (formal)",
+                "du (informal)"
+              ],
+              "correctAnswer": 0,
+              "explanation": "Always use 'Sie' (formal) with patients in professional healthcare settings"
+            },
+            {
+              "question": "You are speaking to the hospital director. Which form should you use?",
+              "options": [
+                "Sie (formal)",
+                "du (informal)"
+              ],
+              "correctAnswer": 0,
+              "explanation": "Always use 'Sie' (formal) with superiors and professional contacts"
+            },
+            {
+              "question": "You are speaking to a child patient (age 10). Which form should you use?",
+              "options": [
+                "Sie (formal)",
+                "du (informal)"
+              ],
+              "correctAnswer": 1,
+              "explanation": "Use 'du' (informal) with children under 16 years old"
+            },
+            {
+              "question": "You are speaking to a new colleague on your first day. Which form should you use?",
+              "options": [
+                "Sie (formal)",
+                "du (informal)"
+              ],
+              "correctAnswer": 0,
+              "explanation": "Start with 'Sie' (formal) with new colleagues. They may later invite you to use 'du'"
+            }
+          ]
+        },
+        {
+          "type": "role-play",
+          "title": "Interactive Scenario: Meeting a Patient",
+          "instructions": "You will practice introducing yourself to a patient. Record or speak your responses.",
+          "scenario": "You enter Mr. Hoffmann's room for the first time during morning rounds.",
+          "exchanges": [
+            {
+              "prompt": "The patient looks at you. What do you say?",
+              "expectedResponse": "Guten Morgen! Ich bin Krankenschwester [Your Name].",
+              "hints": [
+                "Start with a greeting",
+                "Introduce yourself",
+                "State your role"
+              ],
+              "audioExample": "/audio/roleplay-01-response-01.mp3"
+            },
+            {
+              "context": "The patient nods.",
+              "prompt": "How do you ask the patient's name?",
+              "expectedResponse": "Wie heißen Sie, bitte?",
+              "hints": [
+                "Use formal address",
+                "Add 'bitte' for politeness"
+              ],
+              "audioExample": "/audio/roleplay-01-response-02.mp3"
+            },
+            {
+              "context": "Patient: 'Ich heiße Hoffmann.'",
+              "prompt": "How do you respond politely and ask how they're feeling?",
+              "expectedResponse": "Sehr erfreut, Herr Hoffmann. Wie geht es Ihnen heute?",
+              "hints": [
+                "Acknowledge with 'Sehr erfreut'",
+                "Use 'Herr' + last name",
+                "Ask about their well-being"
+              ],
+              "audioExample": "/audio/roleplay-01-response-03.mp3"
+            }
+          ]
+        },
+        {
+          "type": "pronunciation",
+          "title": "Pronunciation Practice",
+          "instructions": "Listen and repeat each phrase. Pay attention to the sounds.",
+          "items": [
+            {
+              "german": "Guten Morgen",
+              "phonetic": "GOO-ten MOR-gen",
+              "audioUrl": "/audio/pronunciation-01.mp3",
+              "tips": [
+                "The 'u' in 'Guten' is pronounced like 'oo' in 'book'",
+                "The 'g' at the end of 'Morgen' is softened, almost like a 'k' sound"
+              ],
+              "slowAudioUrl": "/audio/pronunciation-01-slow.mp3"
+            },
+            {
+              "german": "Wie heißen Sie?",
+              "phonetic": "Vee HI-sen zee?",
+              "audioUrl": "/audio/pronunciation-02.mp3",
+              "tips": [
+                "'Wie' is pronounced like 'vee', not 'wee'",
+                "'ß' (eszett) makes an 'ss' sound",
+                "'Sie' is pronounced 'zee' with a soft 's'"
+              ],
+              "slowAudioUrl": "/audio/pronunciation-02-slow.mp3"
+            },
+            {
+              "german": "Krankenschwester",
+              "phonetic": "KRAN-ken-shves-ter",
+              "audioUrl": "/audio/pronunciation-03.mp3",
+              "tips": [
+                "Break it into syllables: KRAN-ken-shves-ter",
+                "The 'sch' makes a 'sh' sound",
+                "Stress is on the first syllable: KRAN-"
+              ],
+              "slowAudioUrl": "/audio/pronunciation-03-slow.mp3"
+            }
           ]
         }
-      ]
+      ],
+      "supplementaryResources": {
+        "videos": [
+          {
+            "title": "German Greetings in Healthcare Settings",
+            "url": "/videos/a1-01-greetings.mp4",
+            "duration": "5:30",
+            "description": "Watch real healthcare professionals use greetings in a German hospital"
+          }
+        ],
+        "downloadablePDFs": [
+          {
+            "title": "Greetings Quick Reference Card",
+            "url": "/downloads/a1-01-quick-ref.pdf",
+            "description": "Printable reference card with all essential greetings"
+          },
+          {
+            "title": "Formal vs Informal Guide",
+            "url": "/downloads/a1-01-sie-du-guide.pdf",
+            "description": "Comprehensive guide on when to use Sie vs du"
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Goethe-Institut A1 Can-Do Statements",
+            "url": "https://www.goethe.de/en/spr/kup/prf/prf/sd1/can.html",
+            "description": "Official CEFR A1 competency descriptors"
+          }
+        ]
+      },
+      "assessmentCriteria": {
+        "passingScore": 70,
+        "skills": {
+          "vocabulary": {
+            "weight": 25,
+            "minScore": 60
+          },
+          "grammar": {
+            "weight": 25,
+            "minScore": 60
+          },
+          "comprehension": {
+            "weight": 25,
+            "minScore": 60
+          },
+          "production": {
+            "weight": 25,
+            "minScore": 60
+          }
+        }
+      }
     }
   },
   {
@@ -88,32 +869,98 @@
     "description": "Learn numbers, dates, and how to share personal information",
     "content": {
       "generalVocab": [
-        { "german": "eins", "english": "one" },
-        { "german": "zwei", "english": "two" },
-        { "german": "drei", "english": "three" },
-        { "german": "vier", "english": "four" },
-        { "german": "fünf", "english": "five" },
-        { "german": "zehn", "english": "ten" },
-        { "german": "zwanzig", "english": "twenty" },
-        { "german": "das Alter", "english": "the age" },
-        { "german": "die Adresse", "english": "the address" },
-        { "german": "die Telefonnummer", "english": "the phone number" }
+        {
+          "german": "eins",
+          "english": "one"
+        },
+        {
+          "german": "zwei",
+          "english": "two"
+        },
+        {
+          "german": "drei",
+          "english": "three"
+        },
+        {
+          "german": "vier",
+          "english": "four"
+        },
+        {
+          "german": "fünf",
+          "english": "five"
+        },
+        {
+          "german": "zehn",
+          "english": "ten"
+        },
+        {
+          "german": "zwanzig",
+          "english": "twenty"
+        },
+        {
+          "german": "das Alter",
+          "english": "the age"
+        },
+        {
+          "german": "die Adresse",
+          "english": "the address"
+        },
+        {
+          "german": "die Telefonnummer",
+          "english": "the phone number"
+        }
       ],
       "nursingVocab": [
-        { "german": "das Geburtsdatum", "english": "the date of birth" },
-        { "german": "die Patientendaten", "english": "the patient data" },
-        { "german": "die Aufnahme", "english": "the admission" },
-        { "german": "das Zimmer", "english": "the room" },
-        { "german": "das Bett", "english": "the bed" },
-        { "german": "Zimmer Nummer", "english": "room number" },
-        { "german": "Wie alt sind Sie?", "english": "How old are you?" },
-        { "german": "Wann sind Sie geboren?", "english": "When were you born?" }
+        {
+          "german": "das Geburtsdatum",
+          "english": "the date of birth"
+        },
+        {
+          "german": "die Patientendaten",
+          "english": "the patient data"
+        },
+        {
+          "german": "die Aufnahme",
+          "english": "the admission"
+        },
+        {
+          "german": "das Zimmer",
+          "english": "the room"
+        },
+        {
+          "german": "das Bett",
+          "english": "the bed"
+        },
+        {
+          "german": "Zimmer Nummer",
+          "english": "room number"
+        },
+        {
+          "german": "Wie alt sind Sie?",
+          "english": "How old are you?"
+        },
+        {
+          "german": "Wann sind Sie geboren?",
+          "english": "When were you born?"
+        }
       ],
       "phrases": [
-        { "german": "Ich bin 45 Jahre alt.", "english": "I am 45 years old." },
-        { "german": "Meine Telefonnummer ist...", "english": "My phone number is..." },
-        { "german": "Sie sind in Zimmer 204.", "english": "You are in room 204." },
-        { "german": "Ihr Bett ist Nummer 2.", "english": "Your bed is number 2." }
+        {
+          "german": "Ich bin 45 Jahre alt.",
+          "english": "I am 45 years old."
+        },
+        {
+          "german": "Meine Telefonnummer ist...",
+          "english": "My phone number is..."
+        },
+        {
+          "german": "Sie sind in Zimmer 204.",
+          "english": "You are in room 204."
+        },
+        {
+          "german": "Ihr Bett ist Nummer 2.",
+          "english": "Your bed is number 2."
+        }
       ],
       "grammar": [
         {
@@ -132,19 +979,34 @@
           "questions": [
             {
               "question": "How do you say '3' in German?",
-              "options": ["zwei", "drei", "vier", "fünf"],
+              "options": [
+                "zwei",
+                "drei",
+                "vier",
+                "fünf"
+              ],
               "correctAnswer": 1,
               "explanation": "'Drei' is the German word for three."
             },
             {
               "question": "What is 'Geburtsdatum' in English?",
-              "options": ["birthday", "date of birth", "age", "year"],
+              "options": [
+                "birthday",
+                "date of birth",
+                "age",
+                "year"
+              ],
               "correctAnswer": 1,
               "explanation": "'Geburtsdatum' means 'date of birth' in German."
             },
             {
               "question": "How do you ask 'How old are you?' formally in German?",
-              "options": ["Wie alt bist du?", "Wie alt sind Sie?", "Wann sind Sie geboren?", "Was ist dein Alter?"],
+              "options": [
+                "Wie alt bist du?",
+                "Wie alt sind Sie?",
+                "Wann sind Sie geboren?",
+                "Was ist dein Alter?"
+              ],
               "correctAnswer": 1,
               "explanation": "'Wie alt sind Sie?' is the formal way to ask about age."
             }
