@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { lessonAPI, progressAPI } from '../services/api';
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { useAuth } from '../context/AuthContext';
+import { ChevronLeftIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 import Flashcard from '../components/exercises/Flashcard';
 import FillInBlank from '../components/exercises/FillInBlank';
 import MatchingGame from '../components/exercises/MatchingGame';
@@ -10,10 +11,12 @@ import Quiz from '../components/exercises/Quiz';
 const LessonDetail = () => {
   const { lessonCode } = useParams();
   const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
   const [lesson, setLesson] = useState(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('content');
   const [exerciseResults, setExerciseResults] = useState({});
+  const [showSignUpPrompt, setShowSignUpPrompt] = useState(false);
 
   useEffect(() => {
     fetchLesson();
@@ -36,6 +39,12 @@ const LessonDetail = () => {
       [exerciseType]: { score, totalQuestions }
     }));
 
+    // Only save if user is authenticated
+    if (!isAuthenticated) {
+      setShowSignUpPrompt(true);
+      return;
+    }
+
     // Save exercise result
     try {
       await progressAPI.saveExerciseResult({
@@ -51,6 +60,12 @@ const LessonDetail = () => {
   };
 
   const handleMarkComplete = async () => {
+    // Show sign up prompt for guests
+    if (!isAuthenticated) {
+      setShowSignUpPrompt(true);
+      return;
+    }
+
     const exerciseCount = Object.keys(exerciseResults).length;
     const totalScore = exerciseCount > 0
       ? Math.round(
@@ -96,6 +111,43 @@ const LessonDetail = () => {
 
   return (
     <div className="max-w-5xl mx-auto">
+      {/* Sign Up Prompt Modal */}
+      {showSignUpPrompt && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+            <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mx-auto mb-4">
+              <LockClosedIcon className="w-6 h-6 text-primary-600" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">
+              Sign Up to Save Your Progress
+            </h3>
+            <p className="text-gray-600 text-center mb-6">
+              Create a free account to track your progress, save exercise scores, and unlock achievements!
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowSignUpPrompt(false)}
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+              >
+                Continue as Guest
+              </button>
+              <Link
+                to="/register"
+                className="flex-1 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 text-center"
+              >
+                Sign Up Free
+              </Link>
+            </div>
+            <Link
+              to="/login"
+              className="block text-center mt-4 text-sm text-primary-600 hover:text-primary-700"
+            >
+              Already have an account? Login
+            </Link>
+          </div>
+        </div>
+      )}
+
       <Link
         to={`/lessons/${lesson.level}`}
         className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-6"
@@ -103,6 +155,27 @@ const LessonDetail = () => {
         <ChevronLeftIcon className="w-5 h-5 mr-1" />
         Back to {lesson.level} Lessons
       </Link>
+
+      {/* Guest banner */}
+      {!isAuthenticated && (
+        <div className="card bg-blue-50 border-blue-200 mb-6">
+          <div className="flex items-start gap-3">
+            <LockClosedIcon className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-900 mb-1">
+                Browsing as Guest
+              </h3>
+              <p className="text-sm text-gray-600">
+                You can view all content and practice exercises, but your progress won't be saved.{' '}
+                <Link to="/register" className="text-primary-600 hover:text-primary-700 font-medium">
+                  Sign up free
+                </Link>{' '}
+                to track your learning journey!
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="card mb-6">
         <div className="flex items-start justify-between mb-4">

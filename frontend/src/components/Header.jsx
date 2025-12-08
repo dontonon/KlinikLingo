@@ -14,7 +14,7 @@ const Header = () => {
     <header className="bg-white shadow-sm border-b border-gray-200">
       <div className="container mx-auto px-4 py-4 max-w-7xl">
         <div className="flex items-center justify-between">
-          <Link to="/dashboard" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-primary-600">
               KlinikLingo
             </div>
@@ -26,6 +26,12 @@ const Header = () => {
           <nav className="flex items-center space-x-6">
             {isAuthenticated ? (
               <>
+                <Link
+                  to="/lessons/A1"
+                  className="text-gray-700 hover:text-primary-600 transition-colors"
+                >
+                  Lessons
+                </Link>
                 <Link
                   to="/dashboard"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
@@ -53,6 +59,12 @@ const Header = () => {
             ) : (
               <>
                 <Link
+                  to="/lessons/A1"
+                  className="text-gray-700 hover:text-primary-600 transition-colors"
+                >
+                  Lessons
+                </Link>
+                <Link
                   to="/login"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
@@ -62,7 +74,7 @@ const Header = () => {
                   to="/register"
                   className="btn-primary"
                 >
-                  Get Started
+                  Sign Up
                 </Link>
               </>
             )}

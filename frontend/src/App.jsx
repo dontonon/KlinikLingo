@@ -19,27 +19,17 @@ function App() {
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+
+              {/* Public routes - accessible without login */}
+              <Route path="/lessons/:level" element={<LessonList />} />
+              <Route path="/lesson/:lessonCode" element={<LessonDetail />} />
+
+              {/* Private routes - require authentication */}
               <Route
                 path="/dashboard"
                 element={
                   <PrivateRoute>
                     <Dashboard />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/lessons/:level"
-                element={
-                  <PrivateRoute>
-                    <LessonList />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/lesson/:lessonCode"
-                element={
-                  <PrivateRoute>
-                    <LessonDetail />
                   </PrivateRoute>
                 }
               />
@@ -51,7 +41,9 @@ function App() {
                   </PrivateRoute>
                 }
               />
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+
+              {/* Default route - go to A1 lessons */}
+              <Route path="/" element={<Navigate to="/lessons/A1" replace />} />
             </Routes>
           </main>
         </div>
